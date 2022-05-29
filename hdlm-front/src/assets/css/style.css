@@ -1,0 +1,148 @@
+:root {
+    /* --primary: #d223c6; */
+    --primary: #4B8BBE;
+    --background: #141114;
+}
+
+#app {
+    font-family: Oswald, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #ffffff;
+    background: var(--background);
+    min-height: 100vh;
+    max-height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#app ::selection {
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.card {
+    background-color: var(--background) !important;
+}
+
+.logo-branding {
+    font-family: Oswald, sans-serif !important;
+    font-size: 5rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    padding-left: 19px;
+    border-left: 5px solid var(--primary);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.container {
+    width: 100% !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+ul {
+    font-family: Anonymous Pro, monospace;
+    padding-left: 0 !important;
+}
+
+.litem {
+    font-size: 2rem !important;
+    list-style-type: none;
+    text-align: left;
+}
+
+.active {
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    background-color: var(--primary);
+}
+
+#sidebar {
+    position: fixed;
+}
+
+li {
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 24px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+ul a:hover {
+    text-decoration: none;
+    color: white;
+    padding-left: 19px;
+    border-left: 5px solid var(--primary);
+}
+
+#writings {
+    margin-top: 60px;
+    font-family: Oswald, sans-serif;
+    font-size: 1rem;
+}
+
+#writings a {
+    color: #fff;
+}
+
+#writings h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#writings hr {
+    background-color: var(--primary) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.writing-link {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#writings .metadata {
+    font-family: Annonymous Pro, monospace;
+}
+
+#writings a:hover {
+    background-color: var(--primary);
+    text-decoration: none;
+}
+
+span {
+    color: var(--primary);
+}
