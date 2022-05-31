@@ -65,9 +65,7 @@ ul {
     background-color: var(--primary);
 }
 
-#sidebar {
-    position: fixed;
-}
+
 
 li {
     padding: 0;
@@ -145,4 +143,24 @@ a:link {
 
 span {
     color: var(--primary);
+}
+
+#sidebar {
+    position: fixed;
+    font-family: Anonymous Pro, monospace;
+}
+
+#sidebar .my-contact a {
+        color: #fff;
+        padding-left: 24px;
+}
+
+.writing-data {
+    font-family: Anonymous Pro, sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    float: right;
+    margin: 0px 20px 15px 20px;
 }
