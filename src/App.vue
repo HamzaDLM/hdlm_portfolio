@@ -1,6 +1,6 @@
 <template>
 
-  <router-view basename={process.env.PUBLIC_URL}></router-view>
+  <router-view></router-view>
 
 </template>
 
