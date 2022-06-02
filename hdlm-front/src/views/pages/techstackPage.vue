@@ -9,12 +9,7 @@ export default {
   },
   data() {
     return {
-      items: [
-        { title: "Algo Stables in a Market Stress >>", description: "Merlion @ 2022-05-11T02:11:57Z"},
-        { title: "Algo Stables in a Market Stress >>", description: "Merlion @ 2022-05-11T02:11:57Z"},
-        { title: "Algo Stables in a Market Stress >>", description: "Merlion @ 2022-05-11T02:11:57Z"},
-        { title: "Algo Stables in a Market Stress >>", description: "Merlion @ 2022-05-11T02:11:57Z"},
-      ]
+      value: "py",
     }
 }
 };
@@ -30,11 +25,35 @@ export default {
         <hr class="mt-5">
         <div class="row my-5">
 
-          <div v-for="item in items" :key="item.title" class="col-12 pb-4">
-            <a href="/" class="writing-link"
-              >{{ item.title }}</a
-            >
-            <p class="metadata">{{ item.description }}</p>
+          <div class="mb-5">
+            <p class="writing-data">Backend Development</p>
+            <!--<div class="position-relative">-->
+            <img class="card-img" src="@/assets/images/py.png" title='Python'>
+            <img class="card-img" src="@/assets/images/docker.png" title='Docker'>
+            <img class="card-img" src="@/assets/images/gitlab.png" title='Gitlab'>
+            <img class="card-img" src="@/assets/images/git.png" title='Git'>
+            <img class="card-img" src="@/assets/images/mongo.png" title='MongoDB'>
+            <!--</div>-->
+          </div>
+          <div class="mb-5">
+            <p class="writing-data">Data Science</p>
+            <!--<div class="position-relative">-->
+            <img class="card-img" src="@/assets/images/py.png" title='Python'>
+            <img class="card-img" src="@/assets/images/docker.png" title='Docker'>
+            <img class="card-img" src="@/assets/images/gitlab.png" title='Gitlab'>
+            <img class="card-img" src="@/assets/images/git.png" title='Git'>
+            <img class="card-img" src="@/assets/images/mongo.png" title='MongoDB'>
+            <!--</div>-->
+          </div>
+          <div class="mb-5">
+            <p class="writing-data">Frontend Development</p>
+            <!--<div class="position-relative">-->
+            <img class="card-img" src="@/assets/images/py.png" title='Python'>
+            <img class="card-img" src="@/assets/images/docker.png" title='Docker'>
+            <img class="card-img" src="@/assets/images/gitlab.png" title='Gitlab'>
+            <img class="card-img" src="@/assets/images/git.png" title='Git'>
+            <img class="card-img" src="@/assets/images/mongo.png" title='MongoDB'>
+            <!--</div>-->
           </div>
 
         </div>
