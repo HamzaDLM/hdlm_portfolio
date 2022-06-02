@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-    <Layout :pseudo-slot="heeyzaezaezae">
+    <Layout>
       <div class="col-12 col-xl-8 align-self-right">
         <div class="container" id="writings">
           <h1 class="d-none d-xl-block">
@@ -37,12 +37,12 @@ With an overall experience of 5 years, I was an aeronautics engineer before deci
               </p>
             </div>
             <div>
-              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Interest Map:</p>
+              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Areas of interest:</p>
               <p class="writing-data">[IOT, Cyber Security, Game development, DevOps, Electronics, Real-time monitoring, ML, AI, CV, …]</p>  
             </div>
             <div>
-              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Areas professionally worked in:</p>
-              <p class="writing-data">[IOT, Health, Aeronautics, Rail, Automobile]</p>  
+              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Worked professionally in these sectors:</p>
+              <p class="writing-data">[IOT, Health, Aeronautics, Rail, Automobile]</p>
             </div>
             <div>
               <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Career Map:</p>

@@ -9,38 +9,34 @@ export default {
             blueTheme: "blue",
             navTheme: "#fff",
             navThemeDark: "#141114",
+            selectionTheme: "#fff",
+            selectionThemeDark: "#141114",
         }
     },
     created() {
         console.log(this.$route.name)
-        this.currentTheme = localStorage.getItem('theme-color')
-        if (this.currentTheme == 'theme-blue') {
-            document.documentElement.style.setProperty('--primary', this.blueTheme);
-            document.documentElement.style.setProperty('--nav', this.navTheme);
-
-        } else if (this.currentTheme == 'theme-pink') {
-            document.documentElement.style.setProperty('--primary', this.pinkTheme);
-            document.documentElement.style.setProperty('--nav', this.navTheme);
-        } else if (this.currentTheme == 'theme-yellow') {
-            document.documentElement.style.setProperty('--primary', this.yellowTheme);
-            document.documentElement.style.setProperty('--nav', this.navThemeDark);
-        }
+        this.onThemeChange()
     },
     methods: {
-        switchTheme(theme) {
-            localStorage.setItem('theme-color', theme)
+        setVariablesProperty(primaryTheme, navTheme, selectionTheme) {
+            document.documentElement.style.setProperty('--primary', primaryTheme);
+            document.documentElement.style.setProperty('--nav', navTheme);
+            document.documentElement.style.setProperty('--selection', selectionTheme);
+        },
+        onThemeChange() {
             this.currentTheme = localStorage.getItem('theme-color')
             if (this.currentTheme == 'theme-blue') {
-                document.documentElement.style.setProperty('--primary', this.blueTheme);
-                document.documentElement.style.setProperty('--nav', this.navTheme);
+                this.setVariablesProperty(this.blueTheme, this.navTheme, this.navTheme)
             } else if (this.currentTheme == 'theme-pink') {
-                document.documentElement.style.setProperty('--primary', this.pinkTheme);
-                document.documentElement.style.setProperty('--nav', this.navTheme);
+                this.setVariablesProperty(this.pinkTheme, this.navTheme, this.navTheme)
             } else if (this.currentTheme == 'theme-yellow') {
-                document.documentElement.style.setProperty('--primary', this.yellowTheme);
-                document.documentElement.style.setProperty('--nav', this.navThemeDark);
+                this.setVariablesProperty(this.yellowTheme, this.navThemeDark, this.navThemeDark)
             }
-    }
+        },
+        switchTheme(theme) {
+            localStorage.setItem('theme-color', theme)
+            this.onThemeChange()
+        }
   },
 }
 

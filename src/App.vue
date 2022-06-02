@@ -1,8 +1,8 @@
 <template>
 
-  <vue-page-transition>
+  <VuePageTransition name="fade-in-right">
     <router-view ></router-view>
-  </vue-page-transition>
+  </VuePageTransition>
 
 </template>
 
@@ -16,7 +16,6 @@ export default {
   },
   data() {
     return {
-      currentTheme: localStorage.getItem('theme-color')
     }
   },
   

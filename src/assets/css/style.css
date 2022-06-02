@@ -5,6 +5,7 @@
     --background: #141114;
     /* --nav: #fff */
     --nav: #141114;
+    --selection: #fff
 }
 
 * {
@@ -26,7 +27,7 @@
 }
 
 #app ::selection {
-    color: #fff;
+    color: var(--selection);
     background-color: var(--primary);
 }
 
