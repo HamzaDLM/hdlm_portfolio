@@ -2,16 +2,46 @@
 
 export default {
     data() {
-
+        return {
+            currentTheme: localStorage.getItem('theme-color'),
+            yellowTheme: "#ffff00",
+            pinkTheme: "#d223c6",
+            blueTheme: "blue",
+            navTheme: "#fff",
+            navThemeDark: "#141114",
+        }
     },
     created() {
         console.log(this.$route.name)
+        this.currentTheme = localStorage.getItem('theme-color')
+        if (this.currentTheme == 'theme-blue') {
+            document.documentElement.style.setProperty('--primary', this.blueTheme);
+            document.documentElement.style.setProperty('--nav', this.navTheme);
+
+        } else if (this.currentTheme == 'theme-pink') {
+            document.documentElement.style.setProperty('--primary', this.pinkTheme);
+            document.documentElement.style.setProperty('--nav', this.navTheme);
+        } else if (this.currentTheme == 'theme-yellow') {
+            document.documentElement.style.setProperty('--primary', this.yellowTheme);
+            document.documentElement.style.setProperty('--nav', this.navThemeDark);
+        }
     },
-    // computed: {
-    //     currentRouteName() {
-    //         return this.$route.name;
-    //     }
-    // }
+    methods: {
+        switchTheme(theme) {
+            localStorage.setItem('theme-color', theme)
+            this.currentTheme = localStorage.getItem('theme-color')
+            if (this.currentTheme == 'theme-blue') {
+                document.documentElement.style.setProperty('--primary', this.blueTheme);
+                document.documentElement.style.setProperty('--nav', this.navTheme);
+            } else if (this.currentTheme == 'theme-pink') {
+                document.documentElement.style.setProperty('--primary', this.pinkTheme);
+                document.documentElement.style.setProperty('--nav', this.navTheme);
+            } else if (this.currentTheme == 'theme-yellow') {
+                document.documentElement.style.setProperty('--primary', this.yellowTheme);
+                document.documentElement.style.setProperty('--nav', this.navThemeDark);
+            }
+    }
+  },
 }
 
 </script>
@@ -41,8 +71,8 @@ export default {
                             </div>
                             <div class="col-12">
                                 <br/>
-                                <a href="mailto:hamzadelam@hotmail.com">
-                                    <svg data-v-7fbe1623="" viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="envelope" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-envelope b-icon bi"><g data-v-7fbe1623=""><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path></g></svg>
+                                <a class="email" href="mailto:hamzadelam@hotmail.com">
+                                    <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="envelope" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-envelope b-icon bi"><g data-v-7fbe1623=""><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path></g></svg>
                                     hamzadellam@hotmail.com
                                 </a>
                             </div>
@@ -50,13 +80,28 @@ export default {
                         </div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <div class="theme-options">
+                        <div id="theme-yellow" style="color:{{yellowTheme}}"
+                            v-bind:class="{'active': currentTheme === 'theme-yellow'}"
+                            v-on:click="switchTheme('theme-yellow')"
+                        ></div>
+                        <div id="theme-blue"
+                            v-bind:class="{'active': currentTheme === 'theme-blue'}"
+                            v-on:click="switchTheme('theme-blue')"
+                        ></div>
+                        <div id="theme-pink"
+                            v-bind:class="{'active': currentTheme === 'theme-pink'}"
+                            v-on:click="switchTheme('theme-pink')"
+                        ></div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-auto"></div>
 
             <slot>
-                <p>fzefez</p>
             </slot>
         
-        </div>
+    </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
 
   <vue-page-transition>
-    <router-view></router-view>
+    <router-view ></router-view>
   </vue-page-transition>
 
 </template>
@@ -14,6 +14,12 @@ export default {
   name: 'App',
   components: {
   },
+  data() {
+    return {
+      currentTheme: localStorage.getItem('theme-color')
+    }
+  },
+  
   watch: {
         $route: {
             immediate: true,
