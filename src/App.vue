@@ -1,8 +1,6 @@
 <template>
 
-  <VuePageTransition name="fade-in-right">
-    <router-view ></router-view>
-  </VuePageTransition>
+  <router-view basename={process.env.PUBLIC_URL}></router-view>
 
 </template>
 
