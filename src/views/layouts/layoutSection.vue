@@ -57,17 +57,17 @@ export default {
           <p class="logo-branding mb-0">dellam</p>
           <ul class="mt-5 pl-0">
             <li class="litem">
+              <router-link to="/hdlm_portfolio/">00.about me</router-link>
+              <!--
               <a
                 :class="{ active: $route.name === 'Home' }"
                 href="/hdlm_portfolio/"
                 >00.about me</a
               >
-            </li>
+            --></li>
             <li class="litem">
               <router-link to="/hdlm_portfolio/portfolio"
-                ><a :class="{ active: $route.name === 'Portfolio' }"
-                  >01.portfolio</a
-                ></router-link
+                >01.portfolio</router-link
               >
               <!--
               <a
@@ -78,18 +78,28 @@ export default {
               -->
             </li>
             <li class="litem">
+              <router-link to="/hdlm_portfolio/techstack"
+                >02.tech stack</router-link
+              >
+              <!--
               <a
                 :class="{ active: $route.name === 'Tech Stack' }"
                 href="/hdlm_portfolio/techstack"
                 >02.tech stack</a
               >
+              -->
             </li>
             <li class="litem">
+              <router-link to="/hdlm_portfolio/coderepos"
+                >03.code repos</router-link
+              >
+              <!--
               <a
                 :class="{ active: $route.name === 'Code Repos' }"
                 href="/hdlm_portfolio/coderepos"
                 >03.code repos</a
               >
+                -->
             </li>
           </ul>
           <div class="row mt-5 my-contact">
