@@ -64,11 +64,18 @@ export default {
               >
             </li>
             <li class="litem">
+              <router-link to="/hdlm_portfolio/portfolio"
+                ><a :class="{ active: $route.name === 'Portfolio' }"
+                  >01.portfolio</a
+                ></router-link
+              >
+              <!--
               <a
                 :class="{ active: $route.name === 'Portfolio' }"
                 href="/hdlm_portfolio/portfolio"
                 >01.portfolio</a
               >
+              -->
             </li>
             <li class="litem">
               <a
