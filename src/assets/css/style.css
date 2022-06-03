@@ -76,7 +76,7 @@ ul {
     background-color: var(--primary);
 }
 
-.router-link-exact-active {
+a.router-link-exact-active {
     color: var(--nav) !important;
     transition-property: background-color;
     transition-duration: 0.1s;
