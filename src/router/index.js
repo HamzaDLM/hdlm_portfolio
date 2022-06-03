@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 export const router = createRouter({
-  history: createWebHistory('/hdlm_portfolio/'),
+  history: createWebHistory(), //"/hdlm_portfolio/"
   routes: [
     {
       path: "/",
@@ -9,17 +9,22 @@ export const router = createRouter({
       component: () => import("@/views/pages/homePage"),
     },
     {
-      path: "/portfolio",
+      path: "/hdlm_portfolio/",
+      name: "Home",
+      component: () => import("@/views/pages/homePage"),
+    },
+    {
+      path: "/hdlm_portfolio/portfolio",
       name: "Portfolio",
       component: () => import("@/views/pages/portfolioPage"),
     },
     {
-      path: "/techstack",
+      path: "/hdlm_portfolio//techstack",
       name: "Tech Stack",
       component: () => import("@/views/pages/techstackPage"),
     },
     {
-      path: "/coderepos",
+      path: "/hdlm_portfolio/coderepos",
       name: "Code Repos",
       component: () => import("@/views/pages/codereposPage"),
     },
