@@ -5,27 +5,27 @@ export const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "Home",
+      name: "00.about me",
       component: () => import("@/views/pages/homePage"),
     },
     {
       path: "/hdlm_portfolio/",
-      name: "Home",
+      name: "00.about me",
       component: () => import("@/views/pages/homePage"),
     },
     {
       path: "/hdlm_portfolio/portfolio",
-      name: "Portfolio",
+      name: "01.portfolio",
       component: () => import("@/views/pages/portfolioPage"),
     },
     {
       path: "/hdlm_portfolio//techstack",
-      name: "Tech Stack",
+      name: "02.tech stack",
       component: () => import("@/views/pages/techstackPage"),
     },
     {
       path: "/hdlm_portfolio/coderepos",
-      name: "Code Repos",
+      name: "03.code repos",
       component: () => import("@/views/pages/codereposPage"),
     },
   ],

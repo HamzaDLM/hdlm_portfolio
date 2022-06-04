@@ -24,14 +24,26 @@ export default {
     <Layout>
       <div class="col-12 col-xl-8 align-self-right">
         <div class="container" id="writings">
-          <h1 class="d-none d-xl-block">
-            hi, welcome to my <span>playground</span>
-          </h1>
+
+          <!-- HEADER WHEN FULL SIZE -->
+          <div class="d-none d-xl-block">
+            <h1>
+              Hi, welcome to my <span>playground</span>
+            </h1>
+          </div>
+          
+          <!-- HEADER WHEN SMALL SIZE -->
+          <div class="mb-4 d-xl-none d-m-block">
+            <h2>
+              Hi, welcome to my <span>playground</span>
+            </h2>
+          </div>
+
           <hr class="mt-5">
           <div class="row my-5">
             <div>
               <p class="writing-data">
-              <img src="@/assets/images/hdpic.jpg" width="200">
+              <img class="personalpic" src="@/assets/images/hdpic.jpg" width="200">
               I am a software developer specializing in backend development, but have experience with all steps of the software development life-cycle and can be efficiently autonomous and work independently.
 With an overall experience of 5 years, I was an aeronautics engineer before deciding that software development is what I wish to pursue.
               </p>

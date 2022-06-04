@@ -7,9 +7,10 @@ export default {
       pinkTheme: "#d223c6",
       blueTheme: "blue",
       navTheme: "#fff",
-      navThemeDark: "#141114",
+      navThemeDark: "#0D1117",
       selectionTheme: "#fff",
-      selectionThemeDark: "#141114",
+      selectionThemeDark: this.navThemeDark,
+      compactNavDisplay: false,
     };
   },
   created() {
@@ -40,15 +41,48 @@ export default {
       localStorage.setItem("theme-color", theme);
       this.onThemeChange();
     },
+    switchNavState() {
+      if (this.compactNavDisplay == true) {
+          this.compactNavDisplay = false
+      } else {
+          this.compactNavDisplay = true
+      }
+      console.log(this.compactNavDisplay)
+    },
   },
 };
 </script>
 
 <template>
-  <div
-    id="topnav"
-    class="sticky-top container-fluid pl-0 d-xl-none d-lg-none d-sm-block"
-  ></div>
+  <div id="topnav" class="sticky-top container-fluid pl-0 d-xl-none d-lg-none d-sm-block">
+    <div class="row location pl-3">
+      <div class="col">{{ $route.name }}</div>
+      <div class="col text-right">
+        <a @click="switchNavState">
+          <svg
+            data-v-aa0ae4a4=""
+            viewBox="0 0 16 16"
+            width="1em"
+            height="1em"
+            focusable="false"
+            role="img"
+            aria-label="list"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi-list b-icon bi"
+          >
+            <g data-v-aa0ae4a4="">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="row g-0">
     <div class="col-2 pl-0 d-none d-xl-block">
       <div class="card">
@@ -58,48 +92,15 @@ export default {
           <ul class="mt-5 pl-0">
             <li class="litem">
               <router-link to="/hdlm_portfolio/">00.about me</router-link>
-              <!--
-              <a
-                :class="{ active: $route.name === 'Home' }"
-                href="/hdlm_portfolio/"
-                >00.about me</a
-              >
-            --></li>
-            <li class="litem">
-              <router-link to="/hdlm_portfolio/portfolio"
-                >01.portfolio</router-link
-              >
-              <!--
-              <a
-                :class="{ active: $route.name === 'Portfolio' }"
-                href="/hdlm_portfolio/portfolio"
-                >01.portfolio</a
-              >
-              -->
             </li>
             <li class="litem">
-              <router-link to="/hdlm_portfolio/techstack"
-                >02.tech stack</router-link
-              >
-              <!--
-              <a
-                :class="{ active: $route.name === 'Tech Stack' }"
-                href="/hdlm_portfolio/techstack"
-                >02.tech stack</a
-              >
-              -->
+              <router-link to="/hdlm_portfolio/portfolio">01.portfolio</router-link>
             </li>
             <li class="litem">
-              <router-link to="/hdlm_portfolio/coderepos"
-                >03.code repos</router-link
-              >
-              <!--
-              <a
-                :class="{ active: $route.name === 'Code Repos' }"
-                href="/hdlm_portfolio/coderepos"
-                >03.code repos</a
-              >
-                -->
+              <router-link to="/hdlm_portfolio/techstack">02.tech stack</router-link>
+            </li>
+            <li class="litem">
+              <router-link to="/hdlm_portfolio/coderepos">03.code repos</router-link>
             </li>
           </ul>
           <div class="row mt-5 my-contact">
@@ -187,5 +188,48 @@ export default {
     <div class="col-auto"></div>
 
     <slot> </slot>
+  </div>
+
+  <div id="nav-overlay" class="container-fluid sticky-top">
+    <div class="row">
+      <div class="col text-center mt-5">
+        <!--<img
+          data-v-5c49e0fc=""
+          src="/img/egirl-mobile.df7207d5.png"
+          width="200"
+          class=""
+        />-->
+      </div>
+    </div>
+    <ul class="mt-5 pl-0"></ul>
+  </div>
+
+  <div v-if="compactNavDisplay" data-v-5c49e0fc="" id="nav-overlay" class="container-fluid sticky-top">
+  
+    <div data-v-5c49e0fc="" class="row">
+      <div data-v-5c49e0fc="" class="col text-center mt-5">
+        <h1>HAMZA DELLAM</h1>
+        <!--<img
+          data-v-5c49e0fc=""
+          src="/img/egirl-mobile.df7207d5.png"
+          width="200"
+          class=""
+        />-->
+      </div>
+    </div>
+    <ul class="mt-5 pl-0">
+      <li>
+        <router-link to="/hdlm_portfolio/" @click="switchNavState">00.about me</router-link>
+      </li>
+      <li>
+        <router-link to="/hdlm_portfolio/portfolio" @click="switchNavState">01.portfolio</router-link>
+      </li>
+      <li>
+        <router-link to="/hdlm_portfolio/techstack" @click="switchNavState">02.tech stack</router-link>
+      </li>
+      <li>
+        <router-link to="/hdlm_portfolio/coderepos" @click="switchNavState">03.code repos</router-link>
+      </li>
+    </ul>
   </div>
 </template>

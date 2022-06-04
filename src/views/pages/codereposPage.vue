@@ -57,9 +57,21 @@ export default {
   <Layout>
     <div class="col-12 col-xl-8 align-self-right">
       <div class="container" id="writings">
-        <h1 class="d-none d-xl-block">
-          My projects <span> ~ repositories</span>
-        </h1>
+
+        <!-- HEADER WHEN FULL SIZE -->
+        <div class="d-none d-xl-block">
+          <h1>
+            My projects <span> ~ repositories</span>
+          </h1>
+        </div>
+        
+        <!-- HEADER WHEN SMALL SIZE -->
+        <div class="mb-4 d-xl-none d-m-block">
+          <h2>
+            My projects <span> ~ repositories</span>
+          </h2>
+        </div>
+
         <hr class="mt-5">
         <div class="row my-5">
 
