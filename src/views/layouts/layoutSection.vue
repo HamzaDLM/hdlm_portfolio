@@ -206,7 +206,7 @@ export default {
     <slot> </slot>
   </div>
 
-  <div id="nav-overlay" class="container-fluid sticky-top">
+  <div v-if="compactNavDisplay" id="nav-overlay" class="container-fluid sticky-top">
     <div class="row">
       <div class="col text-center mt-5">
         <!--<img
