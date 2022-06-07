@@ -11,6 +11,7 @@ export default {
       selectionTheme: "#fff",
       selectionThemeDark: this.navThemeDark,
       compactNavDisplay: false,
+      lang: localStorage.getItem('lang') || 'en',
     };
   },
   created() {
@@ -48,6 +49,10 @@ export default {
           this.compactNavDisplay = true
       }
       console.log(this.compactNavDisplay)
+    },
+    handleChange(event) {
+      localStorage.setItem('lang', event.target.value)
+      window.location.reload()
     },
   },
 };
@@ -163,6 +168,17 @@ export default {
           </div>
         </div>
       </div>
+
+      <!--
+      <div class="col-12">
+        <div class="language-selector">
+          <a>en</a>
+          <a>jp</a>
+          <a>kr</a>
+        </div>
+      </div>
+      -->
+
       <div class="col-12">
         <div class="theme-options">
           <div

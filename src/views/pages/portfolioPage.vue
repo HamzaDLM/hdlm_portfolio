@@ -38,22 +38,24 @@ export default {
       <div class="container" id="writings">
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
-          <h1>Hi, welcome to my <span>playground</span></h1>
+          <h1>Professional <span>~ Projects</span></h1>
         </div>
 
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
-          <h2>Hi, welcome to my <span>playground</span></h2>
+          <h2>Professional <span>~ Projects</span></h2>
         </div>
 
         <hr class="mt-5" />
         <div class="row my-5">
-          <div v-for="item in items" :key="item.title" class="col-12 pb-4">
-            <a href="/" class="writing-link">{{ item.title }}</a>
-            <p class="metadata">{{ item.description }}</p>
-          </div>
+          
         </div>
       </div>
     </div>
   </Layout>
 </template>
+
+
+<style>
+
+</style>

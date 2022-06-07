@@ -28,14 +28,14 @@ export default {
           <!-- HEADER WHEN FULL SIZE -->
           <div class="d-none d-xl-block">
             <h1>
-              Hi, welcome to my <span>playground</span>
+              {{ $t('title1') }}<span>{{ $t('playground')}}</span>
             </h1>
           </div>
           
           <!-- HEADER WHEN SMALL SIZE -->
           <div class="mb-4 d-xl-none d-m-block">
             <h2>
-              Hi, welcome to my <span>playground</span>
+              {{ $t('title1') }}<span>{{ $t('playground')}}</span>
             </h2>
           </div>
 
@@ -44,17 +44,16 @@ export default {
             <div>
               <p class="writing-data">
               <img class="personalpic" src="@/assets/images/hdpic.jpg" width="200">
-              I am a software developer specializing in backend development, but have experience with all steps of the software development life-cycle and can be efficiently autonomous and work independently.
-With an overall experience of 5 years, I was an aeronautics engineer before deciding that software development is what I wish to pursue.
+              {{ $t('homepage_text') }}
               </p>
             </div>
             <div>
-              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Areas of interest:</p>
-              <p class="writing-data">[IOT, Cyber Security, Game development, DevOps, Electronics, Real-time monitoring, ML, AI, CV, …]</p>  
+              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('areas_of_interest_title') }}</p>
+              <p class="writing-data">{{ $t('areas_of_interest') }}</p>  
             </div>
             <div>
-              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Worked professionally in these sectors:</p>
-              <p class="writing-data">[IOT, Health, Aeronautics, Rail, Automobile]</p>
+              <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('worked_pro') }}</p>
+              <p class="writing-data">{{ $t('worked_pro1') }}</p>
             </div>
             <div>
               <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Career Map:</p>
