@@ -61,14 +61,14 @@ export default {
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
           <h1>
-            My projects <span> ~ repositories</span>
+            My Github <span> ~ repositories</span>
           </h1>
         </div>
         
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
           <h2>
-            My projects <span> ~ repositories</span>
+            My Github <span> ~ repositories</span>
           </h2>
         </div>
 

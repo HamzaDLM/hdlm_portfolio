@@ -23,14 +23,14 @@ export default {
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
           <h1>
-            my ever expanding <span>techstack</span>
+            my ever expanding <span>~ techstack</span>
           </h1>
         </div>
         
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
           <h2>
-            my ever expanding <span>techstack</span>
+            my ever expanding <span>~ techstack</span>
           </h2>
         </div>
 
@@ -64,6 +64,7 @@ export default {
             <img class="card-img" src="@/assets/images/technology/powerbi.png" title='Docker'>
             <img class="card-img" src="@/assets/images/technology/pandas.png" title='Docker'>
             <img class="card-img" src="@/assets/images/technology/numpy.png" title='Docker'>
+            <img class="card-img" src="@/assets/images/technology/excel.png" title='Docker'>
             <!--</div>-->
           </div>
           <div class="mb-5">
