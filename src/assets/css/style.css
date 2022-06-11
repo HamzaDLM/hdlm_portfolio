@@ -266,10 +266,19 @@ span {
     background-color: #d223c6;
 }
 
+.col-12 {
+    padding-left: 15px !important;
+}
+
+.email-container {
+    padding-left: 0px !important;
+}
+
 a.email:hover {
-    padding-left: 19px;
+    padding-left: 19px !important;
     border-left: 5px solid var(--primary);
 }
+
 
 .col-2 {
     padding-right: 15px !important;
@@ -346,15 +355,20 @@ h2 {
 
 .image {
     overflow: hidden;
-    height: 250px;
-    width: 400px;
+    height: 310px;
+    width: 500px;
     position: relative;
     cursor: pointer;
     margin: 15px 0;
     box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
     transition: .5s;
     background-color: grey;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 0px solid var(--primary);
+}
+
+.image:hover {
+    box-shadow: 0 0 10px var(--primary);
 }
 
 .containerm img {
@@ -366,7 +380,7 @@ h2 {
     transform: translate(-50%, -50%);
     transition: .8s;
     border-color: None;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .image:after {

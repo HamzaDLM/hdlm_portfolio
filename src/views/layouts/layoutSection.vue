@@ -142,7 +142,7 @@ export default {
                 </svg>
               </a>
             </div>
-            <div class="col-12">
+            <div class="col-12 email-container">
               <br />
               <a class="email" href="mailto:hamzadelam@hotmail.com">
                 <svg
