@@ -22,7 +22,9 @@ export default {
         $route: {
             immediate: true,
             handler(to) {
-              document.title = 'Hamza Dellam | ' + to.name || 'Hamza Dellam';
+              document.title = 'Hamza Dellam';
+              console.log(to)
+              //  |  + to.name || 'Hamza Dellam'
             }
         },
     }
