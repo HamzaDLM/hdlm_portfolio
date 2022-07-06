@@ -368,7 +368,7 @@ h2 {
 }
 
 .image:hover {
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 15px var(--primary);
 }
 
 .containerm img {

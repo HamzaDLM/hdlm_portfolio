@@ -9,24 +9,6 @@ export default {
   data() {
     return {
       meta: { title: "adazdza" },
-      items: [
-        {
-          title: "AlgABCBCESFS >>",
-          description: "AAAAAAA @ 2022-05-11T02:11:57Z",
-        },
-        {
-          title: "AlgABCBCESFS >>",
-          description: "AAAAAAA @ 2022-05-11T02:11:57Z",
-        },
-        {
-          title: "AlgABCBCESFS >>",
-          description: "AAAAAAA @ 2022-05-11T02:11:57Z",
-        },
-        {
-          title: "AlgABCBCESFS >>",
-          description: "AAAAAAA @ 2022-05-11T02:11:57Z",
-        },
-      ],
     };
   },
 };
@@ -54,8 +36,10 @@ export default {
             <div class="row">
                 <div class="col">
                     <div class="image"> <img src="@/assets/images/projects/scd.png" alt=""> 
-                      <i class="">
+                      <i>
+                      <span style="font-style: bold">
                       Software development projects
+                      </span>
                       <br/>
                       Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
                       <br/>
@@ -65,7 +49,7 @@ export default {
                 </div>
                 <div class="col">
                     <div class="image"> <img src="@/assets/images/projects/budget.png" alt="">
-                      <i class="">
+                      <i>
                       Software development projects
                       <br/>
                       Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
@@ -76,7 +60,7 @@ export default {
                 </div>
             </div>
           </div>
-          <p class="writing-data">Backend Development</p>
+          <p class="writing-data">Data Science</p>
           <div class="containerm">
             <div class="row">
                 <div class="col">
