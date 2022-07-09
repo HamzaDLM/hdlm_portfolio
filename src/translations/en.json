@@ -1,12 +1,32 @@
 {
-    "about_me": "about me",
-    "portfolio": "portfolio",
-    "techstack": "techstack",
-    "playground": "playground",
-    "title1": "Hi, welcome to my ",
-    "homepage_text": "I am a software developer specializing in backend development, but have experience with all phases of the software development life-cycle, from system design to deployment. Can be efficiently autonomous, work within a team, or, if required, work fully independently. With an overall experience of 5 years, I was an aeronautics engineer before opting to change careers.",
-    "areas_of_interest_title": "Domains of experience",
-    "areas_of_interest": "Aeronautics, Rail, Medical, Maritime, IOT...",
-    "worked_pro": "Areas of experience",
-    "worked_pro1": "Data science, Backend development, Frontend development, DevOps, Automation, Computer Vision..."
+    "sidebar": {
+        "aboutme": "00.about me",
+        "portfolio": "01.portfolio",
+        "techstack": "02.tech stack",
+        "coderepos": "03.code repos"
+    },
+    "homepage": {
+        "title1": "HI, WELCOME TO MY ",
+        "title2": "PLAYGROUND",
+        "aboutme": "I am a software developer specializing in backend development, but have experience with all phases of the software development life-cycle, from system design to deployment. Can be efficiently autonomous, work within a team, or, if required, work fully independently. With an overall experience of 5 years, I was an aeronautics engineer before opting to change careers.",
+        "domains": "Domains of experience",
+        "domainstext": "Aeronautics, Rail, Medical, Maritime, IOT...",
+        "areas": "Areas of experience",
+        "areastext": "Data science, Backend development, Frontend development, DevOps, Automation, Computer Vision..."
+    },
+    "portfolio": {
+        "title1": "SOME OF MY WORK",
+        "title2": "WORK"
+        
+    },
+    "techstack": {
+        "title1": "MY EVER EXPANDING ",
+        "title2": "~ TECHSTACK"
+        
+    },
+    "repos": {
+        "title1": "MY GITHUB ",
+        "title2": "~ REPOSITORIES"
+
+    }
 }

@@ -1,12 +1,29 @@
 {
-  "about_me": "나에 대해서",
-  "portfolio": "포트폴리오",
-  "techstack": "테크스택",
-  "playground": "운동장",
-  "title1": "안녕, 내 ",
-  "homepage_text": "저는 백엔드 개발을 전문으로 하는 소프트웨어 개발자이지만 소프트웨어 개발 수명 주기의 모든 단계에 대한 경험이 있으며 효율적으로 자율적이며 독립적으로 작업할 수 있습니다. 5년의 전반적인 경험을 가진 저는 항공 엔지니어였으며 소프트웨어 개발이 제가 추구하고 싶은 일이라고 결정했습니다.",
-  "areas_of_interest_title": "관심 분야:",
-  "areas_of_interest": "[IOT, 사이버 보안, 게임 개발, DevOps, 전자, 실시간 모니터링, ML, AI, CV, ...]",
-  "worked_pro": "다음 분야에서 전문적으로 일했습니다:",
-  "worked_pro1": "[IOT, 건강, 항공, 철도, 자동차]"
+  "sidebar": {
+    "aboutme": "00.about me",
+    "portfolio": "01.portfolio",
+    "techstack": "02.tech stack",
+    "coderepos": "03.code repos"
+  },
+  "homepage": {
+    "title1": "HI, WELCOME TO MY ",
+    "title2": "PLAYGROUND",
+    "aboutme": "I am a software developer specializing in backend development, but have experience with all phases of the software development life-cycle, from system design to deployment. Can be efficiently autonomous, work within a team, or, if required, work fully independently. With an overall experience of 5 years, I was an aeronautics engineer before opting to change careers.",
+    "domains": "Domains of experience",
+    "domainstext": "Aeronautics, Rail, Medical, Maritime, IOT...",
+    "areas": "Areas of experience",
+    "areastext": "Data science, Backend development, Frontend development, DevOps, Automation, Computer Vision..."
+  },
+  "portfolio": {
+    "title1": "SOME OF MY WORK",
+    "title2": "WORK"
+  },
+  "techstack": {
+    "title1": "MY EVER EXPANDING ",
+    "title2": "~ TECHSTACK"
+  },
+  "repos": {
+    "title1": "MY GITHUB ",
+    "title2": "~ REPOSITORIES"
+  }
 }

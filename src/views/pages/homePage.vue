@@ -22,14 +22,14 @@ export default {
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
           <h1>
-            {{ $t('title1') }}<span>{{ $t('playground')}}</span>
+            {{ $t('homepage.title1') }}<span>{{ $t('homepage.title2')}}</span>
           </h1>
         </div>
 
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
           <h2>
-            {{ $t('title1') }}<span>{{ $t('playground')}}</span>
+            {{ $t('homepage.title1') }}<span>{{ $t('homepage.title2')}}</span>
           </h2>
         </div>
 
@@ -38,16 +38,16 @@ export default {
           <div>
             <p class="writing-data">
               <img class="personalpic" src="@/assets/images/hdpic.jpg" width="200">
-              {{ $t('homepage_text') }}
+              {{ $t('homepage.aboutme') }}
             </p>
           </div>
           <div>
-            <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('areas_of_interest_title') }}</p>
-            <p class="writing-data">{{ $t('areas_of_interest') }}</p>
+            <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('homepage.domains') }}</p>
+            <p class="writing-data">{{ $t('homepage.domainstext') }}</p>
           </div>
           <div>
-            <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('worked_pro') }}</p>
-            <p class="writing-data">{{ $t('worked_pro1') }}</p>
+            <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('homepage.areas') }}</p>
+            <p class="writing-data">{{ $t('homepage.areastext') }}</p>
           </div>
           <!--
           <div>
