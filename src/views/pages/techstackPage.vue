@@ -21,7 +21,6 @@ export default {
             { "name": "MongoDB", "url": "mongo.png"},
             { "name": "PostGreSQL", "url": "postgres.png"},
             { "name": "Redis", "url": "redis.png"},
-            { "name": "Git", "url": "git.png"},
           ],
         },
         {
@@ -50,7 +49,8 @@ export default {
             { "name": "Kubernetes", "url": "k8s.png" },
             { "name": "Gunicorn", "url": "guni.png" },
             { "name": "Uvicorn", "url": "uvicorn.png"},
-            { "name": "Github", "url": "github.png"},
+            { "name": "Git", "url": "git.png" },
+            { "name": "Github", "url": "github.png" },
             { "name": "Gitlab", "url": "gitlab.png"},
             { "name": "Docker", "url": "docker.png"},
             // { "name": "Nginx", "url": "nginx.png" },
