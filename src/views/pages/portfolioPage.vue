@@ -8,7 +8,43 @@ export default {
   },
   data() {
     return {
-      meta: { title: "adazdza" },
+      items: [
+        {
+          description: "developing a full stack webapp from system design to deployment.",
+          tech: "Python - Django - MySQL - Vuejs - Openshift - Docker",
+          domain: "Automotive",
+        },
+        {
+          description: "developing a microservice that analyzes IOT devices data and outputs near realtime data.",
+          tech: "Python - FastApi - Celery - MongoDB",
+          domain: "IOT",
+        },
+        {
+          description: "developing a gauge detection webapp, setting up cv2 algorithm with video streaming ui and data gathering python microservice.",
+          tech: "Python - Mongodb - fastapi - ffmpge - cv2",
+          domain: "Industry",
+        },
+        {
+          description: "creating a massive reporting microservice for a fleet management app using fastapi and celery.",
+          tech: "Python - fastapi - celery - mysql - mongodb",
+          domain: "Fleet management",
+        },
+        {
+          description: "developing multiple dashboards for the Covid pandemic using powerbi and python.",
+          tech: "powerbi - python",
+          domain: "Medical",
+        },
+        {
+          description: "developing a smart maritime container's supervision tool from electronics & firmware to backend & frontend.",
+          tech: "Micropython - python - fastapi - vuejs - mongodb",
+          domain: "Maritime",
+        },
+        {
+          description: "developing a discord bot with integrated music playing service and included games.",
+          tech: "Python",
+          domain: "Entertainment",
+        },
+      ] 
     };
   },
 };
@@ -30,8 +66,17 @@ export default {
 
         <hr class="mt-5" />
         <div class="row my-5">
-        
-          <p class="writing-data">Backend Development</p>
+
+          <div v-for="(item, index) in items" :key="index" class="col-12 pb-4">
+            <a class="writing-link" style="text-decoration: none; font-size: 1.8rem;"> <span style="color:darkgrey">{{ item.domain }} /
+              </span>{{ item.description }}</a>
+            <p class="metadata">
+              <span style="color:gray">
+                {{ item.tech }} 
+              </span>
+            </p>
+          </div>
+
           <div class="containerm">
             <div class="row">
                 <div class="col">
@@ -60,7 +105,6 @@ export default {
                 </div>
             </div>
           </div>
-          <p class="writing-data">Data Science</p>
           <div class="containerm">
             <div class="row">
                 <div class="col">

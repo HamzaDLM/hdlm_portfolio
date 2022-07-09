@@ -355,8 +355,8 @@ h2 {
 
 .image {
     overflow: hidden;
-    height: 310px;
-    width: 500px;
+    height: 30em;
+    width: 30em;
     position: relative;
     cursor: pointer;
     margin: 15px 0;
