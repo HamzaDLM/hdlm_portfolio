@@ -43,7 +43,7 @@ export default {
         .get()
           .then((response) => {
             this.items = response.data
-            console.log(Object.keys(response.data[0]))
+            //console.log(Object.keys(response.data[0]))
           })
         .catch((error) => {
           console.log(error);

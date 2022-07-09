@@ -15,7 +15,7 @@ export default {
     };
   },
   created() {
-    console.log(this.$route.name);
+    //console.log(this.$route.name);
     this.onThemeChange();
   },
   methods: {
@@ -48,7 +48,7 @@ export default {
       } else {
           this.compactNavDisplay = true
       }
-      console.log(this.compactNavDisplay)
+      //console.log(this.compactNavDisplay)
     },
     handleChange(event) {
       localStorage.setItem('lang', event.target.value)

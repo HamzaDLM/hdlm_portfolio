@@ -420,7 +420,7 @@ h2 {
     transition-timing-function: ease
 }
 
-/* Language Selector */
+/* Language Selector END */
 
 .language-selector {
     position: fixed;
@@ -450,10 +450,66 @@ h2 {
     color: pink;
 }
 
+/* Language Selector END */
+
+
+/* Portfolio section START */ 
+.portfolio-writings a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.portfolio-writings a:hover {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.portfolio-writings a span {
+    color: darkgrey;
+}
+
+.portfolio-writings p span {
+    color: gray;
+}
+
+.carousel-inner {
+    border-style: solid;
+    border-color: var(--primary);
+}
+
+.carousel-item img {
+    filter: brightness(70%);
+}
+/* Portfolio section END */
+
+/* Sidebar START */
+.my-contact a svg {
+    fill: white;
+}
+
+.my-contact a svg:hover {
+    fill: var(--primary);
+}
+/* Sidebar END */
+
 
 
 
 @media screen and (max-width: 500px) {
+
+    .portfolio-writings a {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .portfolio-writings p {
+        font-size: 0.8rem;
+    }
+
     #writings {
         margin-top: 30px !important;
     }
@@ -493,12 +549,4 @@ h2 {
     .containerm i {
         font-size: 12px;
     }
-}
-
-.my-contact a svg {
-    fill: white;
-}
-
-.my-contact a svg:hover {
-    fill: var(--primary);
 }

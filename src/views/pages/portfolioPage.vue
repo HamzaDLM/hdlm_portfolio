@@ -67,18 +67,59 @@ export default {
         <hr class="mt-5" />
         <div class="row my-5">
 
-          <div v-for="(item, index) in items" :key="index" class="col-12 pb-4">
-            <a style="color:white;background-color: transparent; text-decoration: none; font-size: 1.8rem;"> <span
-                style="color:darkgrey">{{ item.domain }} |
-              </span>{{ item.description }}</a>
-            <p class="metadata">
-              <span style="color:gray">
-                {{ item.tech }}
-              </span>
-            </p>
+          <div v-for="(item, index) in items" :key="index" class="portfolio-writings col-12 pb-4">
+            <a><span>{{ item.domain }} | </span>{{ item.description }}</a>
+            <p class="metadata"><span>{{ item.tech }}</span></p>
           </div>
 
-          <div class="containerm">
+          <div class="col-12 align-center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="@/assets/images/projects/scd.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="@/assets/images/projects/budget.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="@/assets/images/projects/covid2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- <div class="containerm">
             <div class="row">
               <div class="col">
                 <div class="image"> <img src="@/assets/images/projects/scd.png" alt="">
@@ -135,7 +176,7 @@ export default {
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>

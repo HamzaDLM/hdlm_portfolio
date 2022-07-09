@@ -21,9 +21,8 @@ export default {
   watch: {
         $route: {
             immediate: true,
-            handler(to) {
+            handler() { //to was in argument
               document.title = 'Hamza Dellam';
-              console.log(to)
               //  |  + to.name || 'Hamza Dellam'
             }
         },
