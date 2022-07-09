@@ -270,10 +270,6 @@ span {
     padding-left: 15px !important;
 }
 
-.email-container {
-    padding-left: 0px !important;
-}
-
 a.email:hover {
     padding-left: 19px !important;
     border-left: 5px solid var(--primary);
@@ -497,4 +493,12 @@ h2 {
     .containerm i {
         font-size: 12px;
     }
+}
+
+.my-contact a svg {
+    fill: white;
+}
+
+.my-contact a svg:hover {
+    fill: var(--primary);
 }

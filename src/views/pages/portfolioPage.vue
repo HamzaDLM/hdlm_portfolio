@@ -68,67 +68,72 @@ export default {
         <div class="row my-5">
 
           <div v-for="(item, index) in items" :key="index" class="col-12 pb-4">
-            <a class="writing-link" style="text-decoration: none; font-size: 1.8rem;"> <span style="color:darkgrey">{{ item.domain }} /
+            <a style="color:white;background-color: transparent; text-decoration: none; font-size: 1.8rem;"> <span
+                style="color:darkgrey">{{ item.domain }} |
               </span>{{ item.description }}</a>
             <p class="metadata">
               <span style="color:gray">
-                {{ item.tech }} 
+                {{ item.tech }}
               </span>
             </p>
           </div>
 
           <div class="containerm">
             <div class="row">
-                <div class="col">
-                    <div class="image"> <img src="@/assets/images/projects/scd.png" alt=""> 
-                      <i>
-                      <span style="font-style: bold">
+              <div class="col">
+                <div class="image"> <img src="@/assets/images/projects/scd.png" alt="">
+                  <i>
+                    <span style="font-style: bold">
                       Software development projects
-                      </span>
-                      <br/>
-                      Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
-                      <br/>
-                      Python – PowerBI - Excel
-                      </i> 
-                    </div>
+                    </span>
+                    <br />
+                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
+                    plus encore.
+                    <br />
+                    Python – PowerBI - Excel
+                  </i>
                 </div>
-                <div class="col">
-                    <div class="image"> <img src="@/assets/images/projects/budget.png" alt="">
-                      <i>
-                      Software development projects
-                      <br/>
-                      Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
-                      <br/>
-                      Python – PowerBI - Excel
-                      </i> 
-                    </div>
+              </div>
+              <div class="col">
+                <div class="image"> <img src="@/assets/images/projects/budget.png" alt="">
+                  <i>
+                    Software development projects
+                    <br />
+                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
+                    plus encore.
+                    <br />
+                    Python – PowerBI - Excel
+                  </i>
                 </div>
+              </div>
             </div>
           </div>
           <div class="containerm">
             <div class="row">
-                <div class="col">
-                    <div class="image"> <img src="@/assets/images/projects/covid2.png" alt=""> 
-                      <i class="">
-                      Software development projects
-                      <br/>
-                      Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
-                      <br/>
-                      Python – PowerBI - Excel
-                      </i> 
-                    </div>
+              <div class="col">
+                <div class="image"> <img src="@/assets/images/projects/covid2.png" alt="">
+                  <i class="">
+                    Software development projects
+                    <br />
+                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
+                    plus encore.
+                    <br />
+                    Python – PowerBI - Excel
+                  </i>
                 </div>
-                <div class="col">
-                    <div class="image"> <img src="@/assets/images/projects/covid3.png" alt="">
-                      <i class="">
-                      Software development projects
-                      <br/>
-                      Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et plus encore.
-                      <br/>
-                      Python – PowerBI - Excel
-                      </i>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="image"> <img src="@/assets/images/projects/covid3.png" alt="">
+                  <i class="">
+                    Software development projects
+                    <br />
+                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
+                    plus encore.
+                    <br />
+                    Python – PowerBI - Excel
+                  </i>
                 </div>
+              </div>
             </div>
           </div>
 
