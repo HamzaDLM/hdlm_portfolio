@@ -86,22 +86,22 @@ export default {
                 <div class="carousel-item active">
                   <img src="@/assets/images/projects/scd.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Smart Container</h5>
+                    <p>A smart supervision tool for containers built from electronics to firmware and visualized on a powerbi dashboard.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="@/assets/images/projects/budget.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Budget Tracker</h5>
+                    <p>A budget tracker tool built with powerbi and python scripts to pull data from various sources.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="@/assets/images/projects/covid2.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Covid Analytics Chart</h5>
+                    <p>Analytics on Covid situation covering the impact of sanitary measures on the variation of covid numbers in Morocco.</p>
                   </div>
                 </div>
               </div>

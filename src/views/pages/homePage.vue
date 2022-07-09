@@ -45,11 +45,11 @@ export default {
             <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('areas_of_interest_title') }}</p>
             <p class="writing-data">{{ $t('areas_of_interest') }}</p>
           </div>
-          <!--
           <div>
             <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">{{ $t('worked_pro') }}</p>
             <p class="writing-data">{{ $t('worked_pro1') }}</p>
           </div>
+          <!--
           <div>
             <p class="writing-data" style="font-weight: bold; font-size: 1.6rem">Career Map:</p>
             <p class="writing-data">My career started with a position at Bombardier as a technologist, where I did this and that</p>

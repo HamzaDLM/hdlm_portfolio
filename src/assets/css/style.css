@@ -480,7 +480,7 @@ h2 {
 }
 
 .carousel-item img {
-    filter: brightness(70%);
+    filter: brightness(70%) blur(1px);
 }
 /* Portfolio section END */
 
