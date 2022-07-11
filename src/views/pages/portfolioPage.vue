@@ -68,12 +68,12 @@ export default {
         <div class="row my-5">
 
           <div v-for="(item, index) in items" :key="index" class="portfolio-writings col-12 pb-4">
-            <a><span>{{ item.domain }} | </span>{{ item.description }}</a>
+            <a><span>{{ item.domain }} <span style="color:var(--primary)">| </span> </span>{{ item.description }}</a>
             <p class="metadata"><span>{{ item.tech }}</span></p>
           </div>
 
           <div class="col-12 align-center">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -87,21 +87,24 @@ export default {
                   <img src="@/assets/images/projects/scd.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Smart Container</h5>
-                    <p>A smart supervision tool for containers built from electronics to firmware and visualized on a powerbi dashboard.</p>
+                    <p>A smart supervision tool for containers built from electronics to firmware and visualized on a
+                      powerbi dashboard.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="@/assets/images/projects/budget.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Budget Tracker</h5>
-                    <p>A budget tracker tool built with powerbi and python scripts to pull data from various sources.</p>
+                    <p>A budget tracker tool built with powerbi and python scripts to pull data from various sources.
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="@/assets/images/projects/covid2.png" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Covid Analytics Chart</h5>
-                    <p>Analytics on Covid situation covering the impact of sanitary measures on the variation of covid numbers in Morocco.</p>
+                    <p>Analytics on Covid situation covering the impact of sanitary measures on the variation of covid
+                      numbers in Morocco.</p>
                   </div>
                 </div>
               </div>
