@@ -85,7 +85,7 @@ export default {
         <hr class="mt-5">
         <div class="row my-5">
 
-          <div class="mb-5" v-for="stack in techStack" :key="stack.name">
+          <div class="mb-3" v-for="stack in techStack" :key="stack.name">
             <p class="writing-data">{{ stack.name }}</p>
             <div v-for="item in stack.values" :key="item.id">
               <img class="card-img" :src="require(`@/assets/images/technology/${item.url}`)" :title="item.name">

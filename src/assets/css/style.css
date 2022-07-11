@@ -6,7 +6,19 @@
     --background: #0D1117;
     /* --nav: #fff */
     --nav: #141114;
-    --selection: #fff
+    --selection: #fff;
+    --font_Oswald: "Oswald";
+    --font_Annonymous: "AnnonymousPro";
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("../fonts/Oswald-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'AnnonymousPro';
+    src: url("../fonts/AnonymousPro-Regular.ttf")
 }
 
 * {
@@ -38,7 +50,7 @@
 /* Styling the scrollbar START */
 
 #app {
-    font-family: Oswald, sans-serif;
+    font-family: var(--font_Oswald), sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
@@ -62,7 +74,7 @@
 }
 
 .logo-branding {
-    font-family: Oswald, sans-serif !important;
+    font-family: var(--font_Oswald), sans-serif !important;
     font-size: 5rem;
     line-height: 4.4rem;
     text-transform: uppercase;
@@ -82,7 +94,7 @@
 }
 
 ul {
-    font-family: Anonymous Pro, monospace;
+    font-family: var(--font_Annonymous), monospace;
     padding-left: 0 !important;
 }
 
@@ -131,7 +143,7 @@ ul a:hover {
 
 #writings {
     margin-top: 60px;
-    font-family: Oswald, sans-serif;
+    font-family: var(--font_Oswald), sans-serif;
     font-size: 1rem;
 }
 
@@ -140,7 +152,7 @@ ul a:hover {
 }
 
 #writings h1 {
-    font-family: Oswald, sans-serif;
+    font-family: var(--font_Oswald), sans-serif;
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -168,7 +180,7 @@ hr {
 }
 
 .writing-link {
-    font-family: Oswald, sans-serif;
+    font-family: var(--font_Oswald), sans-serif;
     font-size: 2rem;
 }
 
@@ -179,7 +191,7 @@ a:link {
 }
 
 #writings .metadata {
-    font-family: Annonymous Pro, monospace;
+    font-family: var(--font_Annonymous), monospace;
 }
 
 #writings a:hover {
@@ -194,7 +206,7 @@ span {
 
 #sidebar {
     position: fixed;
-    font-family: Anonymous Pro, monospace;
+    font-family: var(--font_Annonymous), monospace;
 }
 
 #sidebar .my-contact a {
@@ -203,7 +215,7 @@ span {
 }
 
 .writing-data {
-    font-family: Anonymous Pro, sans-serif;
+    font-family: var(--font_Annonymous), sans-serif;
     font-size: 1.3rem;
 }
 
@@ -229,7 +241,7 @@ span {
 .card-img {
     flex-shrink: 0 !important;
     width: auto !important;
-    height: 100px;
+    height: 75px;
     min-width: 0;
     vertical-align: middle;
     margin: 20px 20px 10px 0px;
@@ -310,7 +322,7 @@ a.email:hover {
 }
 
 #topnav {
-    font-family: Anonymous Pro, monospace;
+    font-family: var(--font_Annonymous), monospace;
     font-size: 1.8rem;
     background-color: var(--background);
 }
@@ -430,7 +442,7 @@ h2 {
     position: absolute;
     z-index: 2;
     top: 50%;
-    font-family: Anonymous Pro, monospace;
+    font-family: var(--font_Annonymous), monospace;
     color: white;
     font-size: 16px;
     left: 50%;
