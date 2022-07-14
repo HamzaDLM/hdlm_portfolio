@@ -61,6 +61,11 @@ export default {
           description: " Analytics on Covid situation covering the impact of sanitary measures on the variation of covid numbers in Morocco.",
           path: "covid2.png"
         },
+        {
+          title: "Covid Analytics Chart",
+          description: " Analytics on Covid situation covering the third wave in Morocco.",
+          path: "covid4.png"
+        },
       ],
     };
   },
@@ -92,16 +97,16 @@ export default {
           <div class="col-12 align-center">
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
+                <button v-for="(item, index) in carouselItems" :key="index" type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  :data-bs-slide-to="index"
+                  :class="index === 0 ? 'active' : 'nothing'" 
+                  aria-current="true"
+                  :aria-label="index"></button>
               </div>
-
               <div class="carousel-inner rounded">
-                <div v-for="(item, index) in carouselItems" :key="index" :class="index === 0 ? 'carousel-item active' : 'carousel-item'">
+                <div v-for="(item, index) in carouselItems" :key="index"
+                  :class="index === 0 ? 'carousel-item active' : 'carousel-item'">
                   <img :src="require(`@/assets/images/projects/${item.path}`)" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h5><span>{{ item.title }}</span></h5>
@@ -109,7 +114,6 @@ export default {
                   </div>
                 </div>
               </div>
-
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -122,67 +126,6 @@ export default {
               </button>
             </div>
           </div>
-
-
-          <!-- <div class="containerm">
-            <div class="row">
-              <div class="col">
-                <div class="image"> <img src="@/assets/images/projects/scd.png" alt="">
-                  <i>
-                    <span style="font-style: bold">
-                      Software development projects
-                    </span>
-                    <br />
-                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
-                    plus encore.
-                    <br />
-                    Python – PowerBI - Excel
-                  </i>
-                </div>
-              </div>
-              <div class="col">
-                <div class="image"> <img src="@/assets/images/projects/budget.png" alt="">
-                  <i>
-                    Software development projects
-                    <br />
-                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
-                    plus encore.
-                    <br />
-                    Python – PowerBI - Excel
-                  </i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="containerm">
-            <div class="row">
-              <div class="col">
-                <div class="image"> <img src="@/assets/images/projects/covid2.png" alt="">
-                  <i class="">
-                    Software development projects
-                    <br />
-                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
-                    plus encore.
-                    <br />
-                    Python – PowerBI - Excel
-                  </i>
-                </div>
-              </div>
-              <div class="col">
-                <div class="image"> <img src="@/assets/images/projects/covid3.png" alt="">
-                  <i class="">
-                    Software development projects
-                    <br />
-                    Des applications Office premium, un stockage en ligne supplémentaire, une sécurité renforcée, et
-                    plus encore.
-                    <br />
-                    Python – PowerBI - Excel
-                  </i>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </div>

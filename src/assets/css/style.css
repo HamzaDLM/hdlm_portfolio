@@ -529,6 +529,7 @@ h2 {
 .carousel-caption h5 span {
     background-color: var(--primary);
     color: var(--background);
+    font-weight: bold;
 }
 
 .carousel-caption p {
