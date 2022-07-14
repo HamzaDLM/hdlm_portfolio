@@ -42,12 +42,12 @@ export default {
             </p>
           </div>
           <div>
-            <p class="writing-data" style="color:lightgrey;font-weight: bold; font-size: 1.6rem">{{
+            <p class="writing-data" style="color:var(--primary);font-weight: bold; font-size: 1.6rem">{{
               $t('homepage.domains') }}</p>
             <p class="writing-data">{{ $t('homepage.domainstext') }}</p>
           </div>
           <div>
-            <p class="writing-data" style="color:lightgrey;font-weight: bold; font-size: 1.6rem">{{
+            <p class="writing-data" style="color:var(--primary);font-weight: bold; font-size: 1.6rem">{{
               $t('homepage.areas') }}</p>
             <p class="writing-data">{{ $t('homepage.areastext') }}</p>
           </div>

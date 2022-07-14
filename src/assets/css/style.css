@@ -516,7 +516,27 @@ h2 {
 }
 
 .carousel-item img {
-    filter: brightness(70%) blur(1px);
+    filter: brightness(50%);
+}
+
+.carousel-item img:hover {
+    filter: brightness(100%);
+}
+
+.carousel-caption h5 {
+    text-align: center;
+}
+.carousel-caption h5 span {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.carousel-caption p {
+    text-align: center;
+}
+.carousel-caption p span {
+    background-color: var(--primary);
+    color: var(--background);
 }
 /* Portfolio section END */
 

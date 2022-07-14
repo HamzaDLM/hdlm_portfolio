@@ -44,7 +44,24 @@ export default {
           tech: "Python",
           domain: "Entertainment",
         },
-      ] 
+      ],
+      carouselItems: [
+        {
+          title: " Smart Container ",
+          description: " A smart supervision tool for containers built from electronics to firmware and visualized on a powerbi dashboard.",
+          path: "scd.png"
+        },
+        {
+          title: " Budget Tracker ",
+          description: " A budget tracker tool built with powerbi and python scripts to pull data from various sources.",
+          path: "budget.png"
+        },
+        {
+          title: "Covid Analytics Chart",
+          description: " Analytics on Covid situation covering the impact of sanitary measures on the variation of covid numbers in Morocco.",
+          path: "covid2.png"
+        },
+      ],
     };
   },
 };
@@ -82,32 +99,17 @@ export default {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                   aria-label="Slide 3"></button>
               </div>
+
               <div class="carousel-inner rounded">
-                <div class="carousel-item active">
-                  <img src="@/assets/images/projects/scd.png" class="d-block w-100" alt="...">
+                <div v-for="(item, index) in carouselItems" :key="index" :class="index === 0 ? 'carousel-item active' : 'carousel-item'">
+                  <img :src="require(`@/assets/images/projects/${item.path}`)" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Smart Container</h5>
-                    <p>A smart supervision tool for containers built from electronics to firmware and visualized on a
-                      powerbi dashboard.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="@/assets/images/projects/budget.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Budget Tracker</h5>
-                    <p>A budget tracker tool built with powerbi and python scripts to pull data from various sources.
-                    </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="@/assets/images/projects/covid2.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Covid Analytics Chart</h5>
-                    <p>Analytics on Covid situation covering the impact of sanitary measures on the variation of covid
-                      numbers in Morocco.</p>
+                    <h5><span>{{ item.title }}</span></h5>
+                    <p><span>{{ item.description }}</span></p>
                   </div>
                 </div>
               </div>
+
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
