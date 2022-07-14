@@ -60,7 +60,7 @@ export default {
 </script>
 
 <template>
-  <div id="topnav" class="sticky-top container-fluid pl-0 d-xl-none d-lg-none d-sm-block">
+  <div id="topnav" class="sticky-top container-fluid pl-0 d-xl-none d-sm-block">
     <div class="row location pl-3">
       <div class="col">{{ $route.name }}</div>
       <div class="col text-right">
