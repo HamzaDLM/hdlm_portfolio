@@ -38,12 +38,29 @@ export default {
     this.getRepos()
   },
   methods: {
-    getRepos() {
-      return getAPI
+    color(param) {
+      switch (param) {
+        case 'Python':
+          return '#4b8bbe';
+        case 'Vue':
+          return 'lightgreen';
+        case 'Javascript':
+          return 'yellow';
+        default: return 'var(--primary)'
+      }
+    },
+    sorted(param) {
+      param.sort(function (a, b) {
+        return new Date(b.updated_at) - new Date(a.updated_at);
+      })
+    },
+    async getRepos() {
+      return await getAPI
         .get()
           .then((response) => {
             this.items = response.data
-            //console.log(Object.keys(response.data[0]))
+            this.items = this.items.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+            console.log(this.items)
           })
         .catch((error) => {
           console.log(error);
@@ -79,7 +96,9 @@ export default {
             <a :href="item.html_url" target="_blank" class="writing-link"
               >{{ item.name }}</a
             >
-            <p class="metadata">{{ item.description }} <span>{{ item.language }}</span></p>
+            <p class="metadata">{{ item.description }} 
+              <span :style="`color:` + color(item.language)">
+                {{ item.language }}</span> - {{ item.updated_at }}</p>
           </div>
       
         </div>
