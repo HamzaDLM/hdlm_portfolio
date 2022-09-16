@@ -3,9 +3,9 @@
 import '@/assets/css/style.css'
 import axios from 'axios'
 import Layout from '@/views/layouts/layoutSection'
+import moment from 'moment'
 
 const getAPI = axios.create({
-  // baseURL: process.env.VUE_APP_BASE_URL,
   baseURL: "https://api.github.com/users/hamzadlm/repos"
 });
 
@@ -38,6 +38,9 @@ export default {
     this.getRepos()
   },
   methods: {
+    formatDate(param) {
+      return moment(param).format("MMM Do YY")
+    },
     color(param) {
       switch (param) {
         case 'Python':
@@ -97,8 +100,11 @@ export default {
               >{{ item.name }}</a
             >
             <p class="metadata">{{ item.description }} 
-              <span :style="`color:` + color(item.language)">
-                {{ item.language }}</span> - {{ item.updated_at }}</p>
+              <span :style="`color:` + color(item.language)">{{ item.language }}</span>
+               - {{ formatDate(item.updated_at) }}
+               <br>
+               <a v-if="item.homepage" :href="item.homepage" style="color: blueviolet">{{ item.homepage }}</a>
+            </p>
           </div>
       
         </div>

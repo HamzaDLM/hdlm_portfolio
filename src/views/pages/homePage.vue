@@ -22,14 +22,14 @@ export default {
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
           <h1>
-            {{ $t('homepage.title1') }}<span>{{ $t('homepage.title2')}}</span>
+            {{ $t('homepage.title1') }}<span>~ {{ $t('homepage.title2')}}</span>
           </h1>
         </div>
 
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
           <h2>
-            {{ $t('homepage.title1') }}<span>{{ $t('homepage.title2')}}</span>
+            {{ $t('homepage.title1') }}<span>~ {{ $t('homepage.title2')}}</span>
           </h2>
         </div>
 

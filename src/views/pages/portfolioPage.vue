@@ -10,7 +10,7 @@ export default {
     return {
       items: [
         {
-          description: "developing a full stack webapp from system design to deployment.",
+          description: "developing a full stack webapp intended for self-driving software architecture systems.",
           tech: "Python - Django - MySQL - Vuejs - Openshift - Docker",
           domain: "Automotive",
         },
@@ -21,22 +21,22 @@ export default {
         },
         {
           description: "developing a gauge detection webapp, setting up cv2 algorithm with video streaming ui and data gathering python microservice.",
-          tech: "Python - Mongodb - fastapi - ffmpge - cv2",
+          tech: "Python - Mongodb - Fastapi - FFMPEG - CV2",
           domain: "Industry",
         },
         {
           description: "creating a massive reporting microservice for a fleet management app using fastapi and celery.",
-          tech: "Python - fastapi - celery - mysql - mongodb",
+          tech: "Python - Fastapi - Celery - Mysql - Mongodb",
           domain: "Fleet management",
         },
         {
           description: "developing multiple dashboards for the Covid pandemic using powerbi and python.",
-          tech: "powerbi - python",
+          tech: "PowerBI - Python",
           domain: "Medical",
         },
         {
           description: "developing a smart maritime container's supervision tool from electronics & firmware to backend & frontend.",
-          tech: "Micropython - python - fastapi - vuejs - mongodb",
+          tech: "Micropython - Python - Fastapi - VueJS - Mongodb",
           domain: "Maritime",
         },
         {
@@ -78,12 +78,12 @@ export default {
       <div class="container" id="writings">
         <!-- HEADER WHEN FULL SIZE -->
         <div class="d-none d-xl-block">
-          <h1>Some of my <span>work</span></h1>
+          <h1>Some of my <span>~ work</span></h1>
         </div>
 
         <!-- HEADER WHEN SMALL SIZE -->
         <div class="mb-4 d-xl-none d-m-block">
-          <h2>Some of my <span> work</span></h2>
+          <h2>Some of my <span>~ work</span></h2>
         </div>
 
         <hr class="mt-5" />
