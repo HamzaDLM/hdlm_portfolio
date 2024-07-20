@@ -45,9 +45,7 @@ npm run build
 ```
 npm run lint
 ```
-## Want to Help?
-Being mostly a backend developer, am not the best when it comes to frontend, so I would love to hear your opinion and critics about the website. 
 ## Credits
-The design of the website is mostly inspired by that of [egirlcapital], please credit both of us if you decide to clone my repo.
+The website's design is inspired by [egirlcapital], please credit them.
 
 [egirlcapital]: https://www.egirlcapital.com/
